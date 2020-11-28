@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="design.css" />
+        
+    </head>
+    <body style="">
+        
+        <div class = "container">
+            <div class = "header">
+                <h2>Formulário de Cadastro</h2>
+            </div>
+            <form class = "form" id="form">
+                <div class="form-control">
+                    <label>Nome da Obra</label>
+                    <input type="text" placeholder="Insira aqui o nome da obra" id="nome" maxlength="100">
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label>Autor da Obra</label>
+                    <input type="text" placeholder="Insira aqui o autor da obra" id="autor" maxlength="100">
+                    <small>Error message</small>
+                </div>
+                    
+                <div class="form-control">
+                    <label>Ano da Obra</label>
+                    <input type="text" placeholder="Insira aqui o ano da obra" id="ano" maxlength="4">
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label>Período da Obra</label>
+                    <select name="periodo" id="periodo" size="3">
+                        <option value="aC">a.C</option>
+                        <option value="dC">d.C</option>
+                        <option value="-">Vazio</option>
+                    </select>
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label>Tipo da Obra</label>
+                    <select name="tipo" id="tipo" size="4">
+                        <option value="quadro">Quadro</option>
+                        <option value="escultura">Escultura</option>
+                        <option value="outro">Outro</option>
+                        <option value="-">Vazio</option>
+                    </select>
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label>Detalhamento da Obra</label>
+                    <textarea name="detalhamento" cols="40" placeholder="Insira aqui o detalhamento da obra" id="detalhamento" maxlength="2000" rows="5"></textarea>
+                    <small>Error message</small>
+                </div>
+                
+                <button>Submit</button>
+                
+                <script src='java.js'></script>
+            </form>
+        </div>
+    </body>
+    
+</html>
